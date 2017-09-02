@@ -43,23 +43,29 @@ else
 console.log(question);//Debug//}
 */
 
-var age=prompt('What is your Age','20');
+var age=prompt('What is your Age','22');
 var gender= prompt('What is your gender', 'female');
 var band = prompt('What is your favorite music band?', 'LPDRAC')
 if(age>18&&gender==='male')
 {
-    alert('Eres Hombre');
     if (band === 'LPDRAC')
-        {
-            alert('Y Tienes Buen Gusto Musical');
-        }
+    {
+        alert('Eres Hombre Y Tienes Buen Gusto Musical.');
+    }
+    else
+    {
+        alert('Tienes Otros Gustos Musicales.');
+    }
 }
 else if (age > 18 && gender === 'female') 
 {
-    alert('Eres Mujer');
     if (band === 'LPDRAC') 
     {
-        alert('Y Tienes Buen Gusto Musical');
+        alert('Eres Mujer Y Tienes Buen Gusto Musical.');
+    }
+    else 
+    {
+        alert('Mujer Tienes Otros Gustos Musicales.');
     }
 }
 else
